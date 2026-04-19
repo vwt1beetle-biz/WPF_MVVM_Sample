@@ -33,6 +33,11 @@ public class HomePageViewModel: ViewModelBase
             windowManager_.Show<SecondWindow, SecondWindowViewModel>();
         }).AddTo(Disposables);
 
+        ShowWindow2Command.Subscribe(_ =>
+        {
+            windowManager_.Show<SecondWindow, SecondWindowViewModel>();
+        }).AddTo(Disposables);
+
         NavPageCommand.Subscribe(_ =>
         {
             navigationManager_.Navigate<SubPageView, SubPageViewModel>();
