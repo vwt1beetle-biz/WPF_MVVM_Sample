@@ -1,0 +1,5 @@
+﻿.vs/
+WPF_MVVM_Sample/bin/
+WPF_MVVM_Sample/obj/
+*.user
+*.suo
